@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="Home.css">
+    <title>Home</title>
+</head>
+<body>
+
+<section class="hero">
+  <!-- Names outside the main container -->
+  <div class="hero-content">
+    <h1 class="couple-names">
+      <span class="name">Claire</span>
+      <span class="amp">&</span>
+      <span class="name">Georges</span>
+    </h1>
+    <p class="subtitle">Ont décidé de s'unir pour la vie et sont heureux de vous convier à leur mariage qui se déroulera exactement dans.</p>
+  </div>
+  
+
+  <!--compte a rebour-->
+  <div class="container">
+    <div id="countdown" class="countdown">
+      <div class="time-box"><span id="days">0</span><small>Jours</small></div>
+      <div class="time-box"><span id="hours">0</span><small>Heures</small></div>
+      <div class="time-box"><span id="minutes">0</span><small>Minutes</small></div>
+      <div class="time-box"><span id="seconds">0</span><small>Secondes</small></div>
+    </div>
+  </div>
+</section>
+
+  <section class="about">
+    <h2>Notre Histoire</h2>
+    <p>Claire et Georges se sont rencontrés par hasard il y a plusieurs années, et depuis, leur histoire d'amour n'a cessé de grandir. Ils ont décidé de s'unir pour la vie et partager leur bonheur avec vous !</p>
+  <h2>VERSION TEST</h2>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="gallery">
+    <h2>Nos Souvenirs</h2>
+    <div class="slider-wrapper">
+      <div class="slider">
+        <img src="IMG/IMG-20251027-WA0147.jpg" alt="Memory 1">
+        <img src="IMG/IMG-20251027-WA0148.jpg" alt="Memory 2">
+        <img src="IMG/WhatsApp Image 2025-10-27 à 21.21.10_862e9836.jpg" alt="Memory 3">
+        <!-- Repeat for smooth scroll -->
+        <img src="IMG/IMG-20251027-WA0147.jpg" alt="Memory 1">
+        <img src="IMG/IMG-20251027-WA0148.jpg" alt="Memory 2">
+        <img src="IMG/WhatsApp Image 2025-10-27 à 21.21.10_862e9836.jpg" alt="Memory 3">
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW SECTION: 3 pictures with name, hour and a "Visite" link -->
+<section id="guests" class="guests-section">
+<div class="section-inner">
+<h2 class="section-title">Info sur les differents evenement</h2>
+<p class="section-subtitle">Trois moments spéciaux — cliquez sur visite pour voir le lieux</p>
+
+
+<div class="guests-grid">
+
+<!--Pour la mairie-->
+<article class="guest-card">
+<img class="guest-photo" src="IMG/IMG-20251027-WA0039.jpg" alt="Mairie" loading="lazy">
+<div class="guest-body">
+<h3 class="guest-name">Mairie de Yaounde 1</h3>
+<p class="guest-hour">Heure: 08:30 GMT</p>
+<a class="guest-link" href="https://maps.app.goo.gl/4H9zBsihLhhizuus9?g_st=aw">Visite</a>
+</div>
+</article>
+
+<!--A l'Eglise-->
+<article class="guest-card">
+<img class="guest-photo" src="IMG/IMG-20251028-WA0004.jpg" alt="Eglise" loading="lazy">
+<div class="guest-body">
+<h3 class="guest-name">Eglise Catholique de Mfound'assi</h3>
+<p class="guest-hour">Heure: 13:30 GMT</p>
+<a class="guest-link" href="https://maps.app.goo.gl/Ye5RUGabtDUesLYm7?g_st=aw">Visite</a>
+</div>
+</article>
+
+<!--salle de fete-->
+<article class="guest-card">
+<img class="guest-photo" src="IMG/IMG-20251028-WA0002.jpg" alt="Invité 3" loading="lazy">
+<div class="guest-body">
+<h3 class="guest-name">Salle du conseil regional (Hotel de ville)</h3>
+<p class="guest-hour">Heure: 20:00 GMT</p>
+<a class="guest-link" href="https://maps.app.goo.gl/wYq5R71C572GiCzWA?g_st=aw">Visite</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+
+<!-- SECTION 1: save hte date -->
+<section class="image-section fade-in">
+<div class="image-container">
+<img src="c:\Users\GLOBALTECH\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\493C8B3821E768713A4D1C5B1E7F5AD4\WhatsApp Image 2025-10-29 à 09.14.11_abf8c384.jpg" alt="Notre histoire" class="section-image">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfbRX_joumPARgcbHYUjpYdUmPeI9MRIb0VWiiWb2MgaZpLrA/viewform?usp=publish-editor" class="btn">Confirmer votre présence</a>
+</div>
+</section>
+
+
+<!-- SECTION 2: save the date -->
+<section class="image-section fade-in delay">
+<div class="image-container">
+<img src="c:\Users\GLOBALTECH\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\597A30669470A5825AC4655A8AEB8289\WhatsApp Image 2025-10-29 à 09.14.10_494c4564.jpg" alt="Lieu du mariage" class="section-image">
+<button class="confirm-btn"></button>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfbRX_joumPARgcbHYUjpYdUmPeI9MRIb0VWiiWb2MgaZpLrA/viewform?usp=publish-editor" class="btn">Confirmer votre présence</a>
+</div>
+</section>
+
+
+<script>
+    // Minimal countdown script (keeps the JS small)
+    const weddingDate = new Date("Nov 22, 2025 00:00:00").getTime();
+
+    function updateCountdown() {
+    const now = Date.now();
+    const distance = weddingDate - now;
+
+    if (distance <= 0) {
+        document.getElementById("countdown").textContent = "💍 Le grand jour est arrivé ! 💕";
+        return;
+    }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+    }
+
+    // initial run + interval
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+</script>  
+
+
+</body>
+</html>
